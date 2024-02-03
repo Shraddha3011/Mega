@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
   
-    .registration-container {
+    .login-container {
       margin-right: 2rem;
       width: 60%;
       margin-right: 50px;
@@ -53,7 +53,7 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       font-size: 20px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0rem;
     }
   
     button {
@@ -77,20 +77,19 @@
     margin-bottom: 4rem;
     font-size: 20px;
   
-    p.alreadymem {
+    p.notmem {
       color: #666;
       margin-left: 2rem;
-      justify-content: center;
     }
   
-    a.login {
+    a.signup {
       color: #007bff;
       text-decoration: none;
       font-weight: bold;
       margin-left: 1rem;
     }
   
-    a.login:hover {
+    a.signup:hover {
       text-decoration: underline;
     }
   }
@@ -107,8 +106,18 @@
     height: 30rem;
   }
   
-  .verify-group {
-    label {
-      margin-top: 2rem;
+  p.forgottext {
+    font-size: 1rem;
+    width: 100%;
+    margin: -1rem 1rem 1rem;
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    a:hover {
+      text-decoration: underline;
     }
   }

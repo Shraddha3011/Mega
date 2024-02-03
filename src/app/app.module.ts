@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { QuestionComponent } from './components/question/question.component';
 import { Q2Component } from './components/q2/q2.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Q2Component } from './components/q2/q2.component';
     HeaderComponent,
     SignInComponent,
     QuestionComponent,
-    Q2Component
+    Q2Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,FormsModule,
