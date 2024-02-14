@@ -1,9 +1,31 @@
-<div class="que">
+
+<div class="que" *ngIf="currentQuestion === 'dob'">
     <form>
         <label for="dob">What is your Date of Birth</label>
-        <input type="date" id="dob" onchange="calculateAge()">
-        <div id="ageDisplay"></div>
+        <input type="date" id="dob" [(ngModel)]="dob">
     </form>
     <button routerLink="/que" id="back">Back</button>
-    <button routerLink="/q3" id="next">Next</button>
+    <button (click)="showNextQuestion('gender')" id="next">Next</button>
 </div>
+
+<div class="que" *ngIf="currentQuestion === 'gender'">
+    <form>
+        <label>What is your Gender</label>
+        <div>
+            <input type="radio" id="male" name="gender" value="Male" [(ngModel)]="gender">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="Female" [(ngModel)]="gender">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" id="preferNotToSay" name="gender" value="Prefer not to say" [(ngModel)]="gender">
+            <label for="preferNotToSay">Prefer not to say</label>
+        </div>
+    </form>
+    <button (click)="showPrevQuestion('dob')" id="back">Back</button>
+    <button (click)="showNextQuestion('nextQuestion')" id="next">Next</button>
+</div>
+
+<!-- Add more div blocks for each question as needed -->
