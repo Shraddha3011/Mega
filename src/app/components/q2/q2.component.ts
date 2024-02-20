@@ -8,9 +8,15 @@ import { Component } from '@angular/core';
 export class Q2Component {
   currentQuestion: string = 'dob';
   back:string='gender';
-  dob: string = '';
-  gender: string = '';
+  back2:string='medical_Condition';
+  back3:string='smoke';
+  back4:string='surgeries';
 
+  dob: string = '';
+  gender: string = ''
+  medical_Condition: string ='' ;
+  smoke: string ='';
+  surgeries: string ='';
 
   showNextQuestion(nextQuestion: string): void {
     this.currentQuestion = nextQuestion;
