@@ -1,0 +1,58 @@
+<app-generic-navbar></app-generic-navbar>
+<body>
+
+    <div class="box">
+        <form autocomplete="off" class="form"  *ngIf="!resettingPassword" >
+
+            <h1 class="title">Login</h1>
+
+            <label>
+                <input type="text" name="email"  #email="ngModel" [(ngModel)]="user.email"  required />
+                <span>Email</span>
+            </label>
+            <label>
+                <input type="password" id="password" name="password" #password="ngModel" [(ngModel)]="user.password" required />
+                <span>Password</span>
+            </label>
+            <div class="form-group"><a  (click)="Onforget()"class="forgot-password">Forgot Password?</a>
+                <div>
+                    <input type="checkbox" id="remember-me" name="remember-me" [(ngModel)]="rememberMe" >
+                    <label for="remember-me">Remember me</label>
+                    
+                </div>
+
+
+                
+            </div>
+            <button type="submit" class="submit-btn" [disabled]="loading" (click)="signIn()">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+                Login
+            </button>            
+        </form>
+
+
+        <form autocomplete="off" class="form"  *ngIf="resettingPassword" >
+
+            <h1 class="title">Account Recovery</h1>
+            <h4>Please check your email for the verification code.</h4>
+
+            <label>
+                <input type="text" id="code"  name="code" #code="ngModel" [(ngModel)]="user.code" required />
+                <span>Code</span>
+            </label>
+            <label>
+                <input [type]="user.showPassword ? 'text' : 'password'" type="password" id="password" name="password" #password="ngModel" [(ngModel)]="newPassword" required />
+                <span>Password</span>
+            </label>
+                      
+            
+            <button type="submit" class="submit-btn"  (click)="newPasswordSumbit()">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+                Submit new password
+            </button>            
+        </form>
+
+
+    </div>
+</body>
+
