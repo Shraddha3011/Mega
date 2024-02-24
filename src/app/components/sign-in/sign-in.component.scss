@@ -46,7 +46,7 @@
       display: block;
       margin-bottom: 0.7rem;
       color: #333;
-      font-size: 24px;
+      font-size: 20px;
     }
   
     input {
@@ -55,7 +55,7 @@
       box-sizing: border-box;
       border: 1px solid #ddd;
       border-radius: 4px;
-      font-size: 20px;
+      font-size: 16px;
       margin-bottom: 0.5rem;
     }
   
@@ -69,10 +69,11 @@
       cursor: pointer;
       font-size: 1.5rem;
       transition: background 0.3s ease-in-out;
+      background-color: #1995ad;
     }
   
     button:hover {
-      background: #444;
+      opacity: 0.8;
     }
   }
   
@@ -87,7 +88,7 @@
     }
   
     a.login {
-      color: #007bff;
+      color: #1995ad;
       text-decoration: none;
       font-weight: bold;
       margin-left: 1rem;
@@ -100,7 +101,6 @@
   
   .image-container {
     flex-shrink: 0;
-    /* Prevents the image container from shrinking */
     margin-right: 5rem;
     margin-top: 3rem;
   }
