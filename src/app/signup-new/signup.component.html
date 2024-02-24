@@ -1,0 +1,107 @@
+<nav class="navbar">
+    <!-- <div class="company-name">Corporate Analytics</div> -->
+    <div class="logo">
+        <img src="../../../assets/img/logo-7.png" alt="Your Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a routerLink="/customer-home">Home</a></li>
+        <li><a routerLink="/about">About Us</a></li>
+        <li><a routerLink="/contact-us">Contact</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/signup">SignUp</a></li>
+    </ul>
+</nav>
+
+<div class="row justify-content-center my-5">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body" *ngIf="!isConfirm">
+                <div class="row">
+                    <div class="col mb-2">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" #email="ngModel" [(ngModel)]="user.email"
+                            class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <label for="role" class="form-label">User Type:</label>
+                        <select [(ngModel)]="user.userType" class="form-control form-control-sm" #userType="ngModel">
+                            <option value="Admin">Admin</option>
+                            <option value="Support Engineer">Support Engineer</option>
+                            <option value="Employee">Employee</option>
+
+                        </select>
+
+                    </div>
+                </div>
+                <div class="row" *ngIf="user.userType === 'Employee'">
+                    <div class="col mb-2">
+                        <label for="employeeId" class="form-label">Employee ID:</label>
+                        <input type="text" id="employeeId" name="employeeId" [(ngModel)]="user.employeeId"
+                            class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <label for="password" class="form-label">Password:</label>
+                        <div class="input-group input-group-sm">
+                            <input [type]="user.showPassword ? 'text' : 'password'" id="password" name="password"
+                                #password="ngModel" [(ngModel)]="user.password" class="form-control form-control-sm">
+                            <button type="button" class="btn btn-outline-secondary"
+                                (click)="user.showPassword = !user.showPassword">
+                                <i class="bi"
+                                    [ngClass]="{'bi-eye-fill': !user.showPassword, 'bi-eye-slash-fill': user.showPassword}"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <label for="password" class="form-label">Confirm Password:</label>
+                        <div class="input-group input-group-sm">
+                            <input [type]="user.showPassword ? 'text' : 'password'" id="confirm-password"
+                                name="confirm-password" class="form-control form-control-sm">
+                            <button type="button" class="btn btn-outline-secondary"
+                                (click)="user.showPassword = !user.showPassword">
+                                <i class="bi"
+                                    [ngClass]="{'bi-eye-fill': !user.showPassword, 'bi-eye-slash-fill': user.showPassword}"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-grid">
+                        <button type="button" (click)="signUp()" class="btn btn-sm btn-success" [disabled]="loading">
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                                *ngIf="loading"></span>
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="footer">Already have account? <a routerLink="/login">Sign In</a></p>
+            </div>
+            <div class="card-body" *ngIf="isConfirm">
+                <div class="row">
+                    <div class="col mb-2">
+                        <label for="code" class="form-label">Code:</label>
+                        <input type="text" id="code" name="code" #code="ngModel" [(ngModel)]="user.code"
+                            class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-grid">
+                        <button type="button" (click)="confirmSignUp()" class="btn btn-sm btn-success"
+                            [disabled]="loading">
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                                *ngIf="loading"></span>
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
