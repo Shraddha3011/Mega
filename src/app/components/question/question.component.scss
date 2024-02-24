@@ -1,11 +1,13 @@
 div{
-    max-width: 800px;
-    margin: 10rem ; 
+    max-width: 900px;
+    margin: 10rem auto; 
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 400px; 
+    height: auto; 
     align-items: center;
+    background-color: #f9f9f9; 
+    border-radius: 10px;
 }
 
 form {

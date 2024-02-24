@@ -7,17 +7,20 @@
   }
   
   .maincontainer {
-    margin-top: 5rem;
+    margin-top: 9rem;
     margin-left: 15rem;
     display: flex;
     justify-content: center;
   
     .login-container {
       margin-right: 2rem;
-      width: 60%;
+      width: 30%;
       margin-right: 50px;
       padding: 0.6rem;
       border-radius: 1rem;
+      border: 2px solid rgb(220, 220, 220);
+      background-color: #f3f3f3;
+      box-shadow: #444;
     }
   
     form {
@@ -101,7 +104,7 @@
   }
   
   img {
-    width: 42rem;
+    width: 35rem;
     height: 30rem;
   }
   
