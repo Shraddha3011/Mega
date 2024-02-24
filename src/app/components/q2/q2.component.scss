@@ -3,18 +3,15 @@
     max-width: 800px;
     margin: 10rem ; 
     padding: 20px;
-   // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 400px; 
     align-items: center;
 }
 .custom-radio {
-    /* Set your custom size */
     width: 30px;
     height: 30px;
     vertical-align: middle;
  
-    /* Optional: Add other styling as needed */
     border: 2px solid #333;
     border-radius: 50%;
   }
@@ -31,7 +28,7 @@ label {
     display: block;
     margin-bottom: 20px;
     text-align: left; 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 input {
@@ -40,10 +37,11 @@ input {
     padding: 15px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 button {
-    background-color: #3999ed;
+    background-color: #1995ad;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -54,7 +52,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #a1d6e2;
 }
 
 #back{

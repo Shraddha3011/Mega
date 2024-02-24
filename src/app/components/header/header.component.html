@@ -1,10 +1,22 @@
-<nav>
-        <div class="navbar">
-          <div class="logo"><a href="#">Insurance Recommendation Sysetm</a></div>
-          <ul class="menu">
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="signin">Sign In</a></li>
-            <li><a routerLink="que">Get Recommendation</a></li>
+<header class="header">
+  <div class="header-title-container">
+      <a routerLink="/customer-home" class="title-link">
+          <h1 class="title">
+              <img src="assets/img/logo-7.png" width="110px" height="auto" style="margin-right: 5px" />
+          </h1>
+      </a>
+      <button class="hamburger">
+      </button>
+  </div>
+  <ng-content />
+
+  <div class="header-links-container">
+      <div class="header-links-container">
+          <ul>
+              <li class="nav-link" [routerLink]="['']" class="nav-link" style="cursor: pointer">Home</li>
+              <li class="nav-link" [routerLink]="['/signin']" class="nav-link" style="cursor: pointer">Sign in</li>
+              <li class="nav-link" [routerLink]="['/question']" class="nav-link" style="cursor: pointer">Get recommendation</li>
           </ul>
-        </div>
-</nav>
+      </div>
+  </div>
+</header>
