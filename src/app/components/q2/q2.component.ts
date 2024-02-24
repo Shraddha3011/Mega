@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./q2.component.scss']
 })
 export class Q2Component {
+  currentQuestion: string = 'dob';
+  back:string='gender';
+  back2:string='medical_Condition';
+  back3:string='smoke';
+  back4:string='surgeries';
 
+  dob: string = '';
+  gender: string = ''
+  medical_Condition: string ='' ;
+  smoke: string ='';
+  surgeries: string ='';
+
+  showNextQuestion(nextQuestion: string): void {
+    this.currentQuestion = nextQuestion;
+  }
+  showPrevQuestion(prevQuestion: string): void {
+    this.currentQuestion = prevQuestion;
+}
 }
