@@ -1,26 +1,19 @@
-.loader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: #111;
-  }
-  
+
   .maincontainer {
-    margin-top: 7.5rem;
+    margin-top: 4rem;
     margin-left: 15rem;
     display: flex;
     justify-content: center;
   
     .registration-container {
       margin-right: 2rem;
-      width: 30%;
+      width: 27%;
       margin-right: 50px;
       padding: 0.6rem;
-      border-radius: 1rem;
-      border: 2px solid rgb(220, 220, 220);
-      background-color: #f3f3f3;
-      box-shadow: #444;
+      background: rgb(0, 0, 0, 0);
+      border: 3px solid gray;
+  border-bottom-color: grey;
+  border-radius: 20px;
     }
   
     form {
@@ -32,10 +25,12 @@
   
     .heading {
       font-family: "Lexend", sans-serif;
-      color: #333;
+      color: #024451;
       font-size: 30px;
       margin-bottom: 2rem;
       text-align: center;
+      font-weight: 400;
+        letter-spacing: 0.3px;
     }
   
     .form-group {
