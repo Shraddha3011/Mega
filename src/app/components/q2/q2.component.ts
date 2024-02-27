@@ -10,13 +10,19 @@ export class Q2Component {
   back:string='gender';
   back2:string='medical_Condition';
   back3:string='smoke';
-  back4:string='surgeries';
+  back4:string='surgeries'
+  back5:string='physicalact'
+  back6:string='overall';
+  back7:string='occupation';
 
   dob: string = '';
-  gender: string = ''
+  gender: string = '';
   medical_Condition: string ='' ;
   smoke: string ='';
   surgeries: string ='';
+  physicalact:string='';
+  overall:string='';
+  occupation:string='';
 
   showNextQuestion(nextQuestion: string): void {
     this.currentQuestion = nextQuestion;

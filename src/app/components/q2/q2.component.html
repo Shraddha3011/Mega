@@ -1,16 +1,16 @@
 
 <div class="que" *ngIf="currentQuestion === 'dob'">
     <form>
-        <label for="dob">What is your Date of Birth</label>
+        <label for="dob"><strong> What is your Date of Birth</strong></label>
         <input type="date" id="dob" [(ngModel)]="dob">
     </form>
-    <button routerLink="/que" id="back">Back</button>
+    <button routerLink="/question" id="back">Back</button>
     <button (click)="showNextQuestion('gender')" id="next">Next</button>
 </div>
 
 <div class="que" *ngIf="currentQuestion === 'gender'">
     <form>
-        <label>What is your Gender</label>
+        <label><strong>What is your Gender</strong> </label>
         <div class="radio-option">
             <input type="radio" class="custom-radio" id="male" name="gender" value="Male" [(ngModel)]="gender">
             <label class="radio-option" for="male">Male</label>
@@ -32,7 +32,7 @@
 <!-- Add more div blocks for each question as needed -->
 <div class="que" *ngIf="currentQuestion === 'medical_Condition'">
     <form>
-        <label>Do you have any pre-existing medical conditions?</label>
+        <label><strong>Do you have any pre-existing medical conditions?</strong></label>
         <div class="radio-option">
             <input type="radio" class="custom-radio"  id="Nopre-existingconditions" name="medical_Condition" value="No pre-existing conditions" [(ngModel)]="medical_Condition">
             <label for="Nopre-existingconditions">No pre-existing conditions</label>
@@ -49,30 +49,77 @@
             <input type="radio" class="custom-radio" id="Respiratoryconditions" name="medical_Condition" value="Respiratory conditions" [(ngModel)]="medical_Condition">
             <label for="Respiratoryconditions">Respiratory conditions (e.g., asthma, COPD)</label>
         </div>
+        <div class="radio-option">
+            <input type="radio" class="custom-radio" id="cancer" name="medical_Condition" value="cancer" [(ngModel)]="medical_Condition">
+            <label for="cancer">Cancer</label>
+        </div>
     </form>
+    <div class="radio-option">
+        <input type="radio" class="custom-radio" id="other" name="medical_Condition" value="other" [(ngModel)]="medical_Condition">
+        <label for="other">Other</label>
+    </div>
     <button (click)="showPrevQuestion('gender')" id="back">Back</button>
     <button (click)="showNextQuestion('surgeries')" id="next">Next</button>
 </div>
 
 <div class="que" *ngIf="currentQuestion === 'surgeries'">
     <form>
-        <label>Have you had any surgeries or medical procedures in the past year?    </label>
+        <label><strong>Have you had any surgeries or medical procedures in the past year? </strong>   </label>
         <div class="radio-option">
-            <input type="radio"class="custom-radio"  id="yes" name="smoke" value="yes" [(ngModel)]="surgeries">
+            <input type="radio"class="custom-radio"  id="yes" name="surgeries" value="yes" [(ngModel)]="surgeries">
             <label for="yes">Yes</label>
         </div>
         <div class="radio-option">
-            <input type="radio" class="custom-radio" id="no" name="smoke" value="no" [(ngModel)]="surgeries">
+            <input type="radio" class="custom-radio" id="no" name="surgeries" value="no" [(ngModel)]="surgeries">
             <label for="no">No</label>
         </div>
     </form>
     <button (click)="showPrevQuestion('medical_Condition')" id="back">Back</button>
+    <button (click)="showNextQuestion('physicalact')" id="next">Next</button>
+</div>
+<div class="que" *ngIf="currentQuestion === 'physicalact'">
+    <form>
+        <label><strong>Do you engage in regular phisycal activity or exercise ? </strong></label>
+        <div class="radio-option">
+            <input type="radio"class="custom-radio"  id="yes" name="physicalact" value="yes" [(ngModel)]="physicalact">
+            <label for="yes">Yes</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" class="custom-radio" id="no" name="physicalact" value="no" [(ngModel)]="physicalact">
+            <label for="no">No</label>
+        </div>
+    </form>
+    <button (click)="showPrevQuestion('surgeries')" id="back">Back</button>
+    <button (click)="showNextQuestion('overall')" id="next">Next</button>
+</div>
+
+<div class="que" *ngIf="currentQuestion === 'overall'">
+    <form>
+        <label><strong>How would you describe your overall health status?  </strong></label>
+        <div class="radio-option">
+            <input type="radio"class="custom-radio"  id="Excellent" name="overall" value="Excellent" [(ngModel)]="overall">
+            <label for="Excellent">Excellent</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" class="custom-radio" id="verygood" name="overall" value="verygood" [(ngModel)]="overall">
+            <label for="verygood">Very good</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" class="custom-radio" id="good" name="overall" value="good" [(ngModel)]="overall">
+            <label for="good">Good</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" class="custom-radio" id="poor" name="overall" value="poor" [(ngModel)]="overall">
+            <label for="poor">Poor</label>
+        </div>
+    </form>
+    <button (click)="showPrevQuestion('physicalact')" id="back">Back</button>
     <button (click)="showNextQuestion('smoke')" id="next">Next</button>
 </div>
 
 <div class="que" *ngIf="currentQuestion === 'smoke'">
     <form>
-        <label>Are you a smoker or non-smoker?   </label>
+        <label><strong>Are you a smoker or non-smoker?  </strong> </label>
         <div class="radio-option">
             <input type="radio"class="custom-radio"  id="yes" name="smoke" value="yes" [(ngModel)]="smoke">
             <label for="yes">Yes</label>
@@ -82,6 +129,42 @@
             <label for="no">No</label>
         </div>
     </form>
-    <button (click)="showPrevQuestion('medical_Condition')" id="back">Back</button>
+    <button (click)="showPrevQuestion('physicalact')" id="back">Back</button>
+    <button (click)="showNextQuestion('occupation')" id="next">Next</button>
+</div>
+
+<div class="que"  *ngIf="currentQuestion === 'occupation'">
+    <form>
+        <label><strong>What is your occupation ? </strong> </label>
+        <div class="radio-option">
+            <input type="radio"class="custom-radio"  id="Salariedprof" name="occupation" value="Salariedprof" [(ngModel)]="occupation">
+            <label for="Salariedprof">Salaried professional</label>
+        </div>
+        <div>
+            <input type="radio" class="custom-radio" id="selfemp" name="occupation" value="selfemp" [(ngModel)]="occupation">
+            <label for="selfemp">Self employed </label>
+        </div>
+        <div>
+            <input type="radio" class="custom-radio" id="student" name="occupation" value="student" [(ngModel)]="occupation">
+            <label for="student">Student</label>
+        </div>
+        <div>
+            <input type="radio" class="custom-radio" id="homemaker" name="occupation" value="homemaker" [(ngModel)]="occupation">
+            <label for="homemaker">Homemaker</label>
+        </div>
+        <div>
+            <input type="radio" class="custom-radio" id="retired" name="occupation" value="retired" [(ngModel)]="occupation">
+            <label for="retired">Retired</label>
+        </div>
+        <div>
+            <input type="radio" class="custom-radio" id="unemployed" name="occupation" value="unemployed" [(ngModel)]="occupation">
+            <label for="unemployed">Unemployed</label>
+        </div>
+        <div>
+            <input type="radio" class="custom-radio" id="other" name="occupation" value="other" [(ngModel)]="occupation">
+            <label for="other">    Other              </label>
+        </div>
+    </form>
+    <button (click)="showPrevQuestion('smoke')" id="back">Back</button>
     <button (click)="showNextQuestion('nextQ')" id="next">Next</button>
 </div>
