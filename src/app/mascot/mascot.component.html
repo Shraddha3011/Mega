@@ -1,0 +1,17 @@
+<!-- mascot.component.html -->
+
+<div class="mascot" (click)="onMascotClick()">
+    <img src="assets/img/annidoc.jpg" alt="Mascot Image">
+  </div>
+  
+  <!-- Bootstrap modal -->
+  <div class="modal" tabindex="-1" role="dialog" [ngClass]="{'show': showModal}" (click)="closeModal()">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>{{ mascotQuote }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
