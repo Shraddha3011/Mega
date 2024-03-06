@@ -7,7 +7,6 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { QuestionComponent } from './components/question/question.component';
-import { Q2Component } from './components/q2/q2.component';
 import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { LoginComponent } from './components/login/login.component';
     HeaderComponent,
     SignInComponent,
     QuestionComponent,
-    Q2Component,
     LoginComponent
   ],
   imports: [
