@@ -1,50 +1,122 @@
-div{
-    max-width: 900px;
-    margin: 10rem auto; 
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    height: auto; 
-    align-items: center;
-    background-color: #F1F1F2; 
-    border-radius: 10px;
+
+$primary-color: #1995AD; 
+$secondary-color: #F1F1F2; 
+$accent-color: #E6FFFD; 
+
+
+$border-radius: 10px;
+
+.que-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; 
 }
 
-form {
-    text-align: center;
-    margin: 20px;
+.que {
+  width: 600px;
+  padding: 30px;
+  border-radius: $border-radius;
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #A1D6E2;
+  border: 1px solid #ddd;
+}
+
+.question-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.text-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: $border-radius;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.text-input:focus {
+  border-color: $primary-color; 
+}
+
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+}
+
+.radio-option input[type="radio"]:checked {
+  background-color: #1995AD;
+}
+
+.radio-option input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: black;
+}
+
+
+.radio-label {
+  font-size: 16px;
+}
+
+
+.button-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 20px;
-    text-align: left; 
-    font-size: 24px;
-}
-
-input {
-    width: 50%;    
-    height: 50px;
-    padding: 15px;
-    margin-bottom: 14px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-button {
-    background-color: #1995ad;
-    color: white;
-    padding: 10px 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+ 
+  button {
+    padding: 10px 24px;
     border: none;
-    border-radius: 4px;
+    border-radius: $border-radius;
+    font-family: inherit;
+    font-size: 16px; 
     cursor: pointer;
-    font-size: 24px;
-    width: 150px;
+    transition: background-color 0.2s ease-in-out;
+    background-color:#F1F1F2;
+    border: 1px solid black;
+  }
+  
+  button:hover {
+
+    background-color: #1995AD;;
+  
+  }
+  
+  button:focus {
+    outline: 2px solid $primary-color;
+  }
+
+
+.que h3 { 
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-button:hover {
-    background-color: #a1d6e2;
+.radio-label {
+  margin-left: 5px; 
+}
+label{
+  margin-bottom: 10px;
 }
