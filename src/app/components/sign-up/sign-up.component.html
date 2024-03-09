@@ -1,29 +1,31 @@
 <!-- 
-  <div class="maincontainer" >
-    <div class="login-container">
+  <div class="maincontainer" ngxUiLoaderBlurred (blur)="500">
+    <div class="registration-container">
       <form>
         <div class="heading">
-          <p>Login</p>
+          <p>Create an account</p>
+        </div>
+        <div class="form-group" >
+          <label for="email">Name</label>
+          <input type="text" name="name" required placeholder="Enter your name" />
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" name="email" required placeholder="Enter your email" />
         </div>
-        <div class="form-group">
+        <div class="form-group" >
           <label for="password">Password</label>
-          <input type="password" name="password" required placeholder="Enter your password" />
+          <input type="password" name="password" required placeholder="Enter your password"  />
         </div>
-        <p class="forgottext">
-          <a routerLink="/forgot-password" class="signup">Forgot Password</a>
-        </p>
-        <div>
-          <br />
-          <button class="register" type="button">Login</button>
+        <div >
+          <button class="register" type="button">
+            SignUp
+          </button>
         </div>
       </form>
       <div class="bottom">
-        <p class="notmem">
-          Not a member?<a routerLink="/signin" class="signup">SignUp</a>
+        <p class="alreadymem">
+          Already a member?<a routerLink="/login" class="login">Login</a>
         </p>
       </div>
     </div>
@@ -32,20 +34,21 @@
     </div>
   </div> -->
 
+
   <div class="maincontainer">
     <div class="image-container">
-      <!-- <img src="https://img.freepik.com/free-vector/woman-with-kid-consulting-doctor_74855-4587.jpg?w=740&t=st=1706953844~exp=1706954444~hmac=0a46370eb83f03c9ddf183d4312322dddb6cf7e27f01685591d080b0441e2363" alt="Image" /> -->
+      <!-- <img src="https://img.freepik.com/free-vector/woman-with-kid-consulting-doctor_74855-4587.jpg?w=740&t=st=1706953844~exp=1706954444~hmac=0a46370eb83f03c9ddf183d4312322dddb6cf7e27f01685591d080b0441e2363" /> -->
     </div>
     <div class="displayTable">
       <div class="displayTableCell">
-        <div class="authBlock">
-          <h3 class="heading">Log In</h3>
+        <div class="authBlock registration-container">
+          <h3 class="heading">Create an account</h3>
           <div class="formGroup">
             <input
-              type="text"
+              type="email"
               class="formControl"
-              placeholder="Username"
-              #userName
+              placeholder="Email Address"
+              #userEmail
               required
             />
           </div>
@@ -54,31 +57,31 @@
               type="password"
               class="formControl"
               placeholder="Password"
-              #userPassword
+              #userPwd
               required
             />
           </div>
-          <!-- Calling SignIn Api from AuthService -->
           <div class="formGroup">
             <input
               type="button"
               class="btn btnPrimary"
-              value="Log in"
-              (click)="authService.SignIn(userName.value, userPassword.value)"
+              value="Register"
+              (click)="authService.SignUp(userEmail.value, userPwd.value)"
             />
           </div>
           <div class="formGroup">
             <span class="or"><span class="orInner">Or</span></span>
           </div>
-          <div class="forgotPassword">
-            <span routerLink="/forgot-password">Forgot Password?</span>
-          </div>
+          <!-- <div class="redirectToLogin bottom">
+            <p class="alreadymem">Already have an account?</p>
+            <a class="login redirect" routerLink="/login">Log In</a>
+          </div> -->
           <div class="redirectToLogin">
-            <span>Don't have an account?<span class="redirect" routerLink="/signup">Register</span></span>
+            <span>Already have an account?<span class="redirect" routerLink="/login">Login</span></span>
           </div>
         </div>
       </div>
     </div>
-    
+
   </div>
   
