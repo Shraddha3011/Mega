@@ -62,7 +62,7 @@
   transition: background 0.3s ease-in-out;
   align-items: center;
   text-align: center;
-  // margin-left: 8rem;
+  margin-left: 8rem;
 }
 
 .btnPrimary {
@@ -78,7 +78,9 @@
   margin-bottom: 2rem;
   font-size: 20px;
 }
-
+.redirectToLogin{
+  margin-left: 11rem;
+}
 
 .redirect {
   color: #1995ad;
