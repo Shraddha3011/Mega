@@ -1,0 +1,37 @@
+<app-generic-navbar></app-generic-navbar>
+<section class="section-hero">
+  <div class="hero">
+    <div class="hero-text-box">
+      <h1 class="heading-primary">
+        Your Hero Heading
+      </h1>
+      <p class="hero-description">
+        Your Hero Description
+      </p>
+      <div class="delivered-products">
+        <div class="delivered-imgs">
+          <img src="static_image_1_url" alt="Customer photo 1" />
+          <img src="static_image_2_url" alt="Customer photo 2" />
+          <img src="static_image_3_url" alt="Customer photo 3" />
+          <img src="static_image_4_url" alt="Customer photo 4" />
+          <img src="static_image_5_url" alt="Customer photo 5" />
+          <img src="static_image_6_url" alt="Customer photo 6" />
+        </div>
+        <p class="delivered-text">
+          <span>Your Additional Data 2</span> Your Additional Data 3
+        </p>
+      </div>
+      <div class="login-container">
+        <button [routerLink]="['/login']" class="login-btn">Your Login Text</button>
+      </div>
+    </div>
+    <div class="hero-img-box">
+      <picture>
+        <img class="hero-img" src="static_background_image_url" alt="Background Image" />
+      </picture>
+    </div>
+  </div>
+</section>
+<div>
+  <app-footer></app-footer>
+</div>
