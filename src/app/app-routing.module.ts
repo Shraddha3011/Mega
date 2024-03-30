@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
-  {path:'about',component: AboutUsComponent},
+  {path:'about-us',component: AboutUsComponent},
   {path:'contact',component: ContactUsComponent},
 
 ];

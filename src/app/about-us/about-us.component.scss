@@ -1,0 +1,28 @@
+#page-header {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 200px;
+  }
+  
+  h2 {
+    color: #29C4A9;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  @media  (max-width: 600px) {
+  
+    #page-header {
+      padding: 0px;
+    }
+  }

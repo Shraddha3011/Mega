@@ -12,8 +12,10 @@ import {FirebaseUIModule, firebase, firebaseui} from 'firebaseui-angular';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
-import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+
+
 
 
 @NgModule({
@@ -25,8 +27,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     QuestionComponent,
     LoginComponent,
     VerifyEmailComponent,
+    ContactUsComponent,
     AboutUsComponent,
-    ContactUsComponent
   ],
   imports: [
     BrowserModule,FormsModule,
