@@ -1,122 +1,135 @@
-
-$primary-color: #1995AD; 
-$secondary-color: #F1F1F2; 
-$accent-color: #E6FFFD; 
-
-
-$border-radius: 10px;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
 
 .que-container {
+  width: 60%;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 50vh; 
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 .que {
-  width: 600px;
-  padding: 30px;
-  border-radius: $border-radius;
-  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #A1D6E2;
-  border: 1px solid #ddd;
+  border: 2px solid #1995AD;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .question-title {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px;
+  color: #1995AD;
 }
-
 
 .form-group {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-
 .text-input {
-  width: 100%;
-  padding: 12px 20px;
-  border: 1px solid #ddd;
-  border-radius: $border-radius;
-  font-size: 16px;
-  transition: border-color 0.2s ease-in-out;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
 }
 
 .text-input:focus {
-  border-color: $primary-color; 
+    border-color: #1995AD;
 }
 
+.btn-next {
+    background-color: #1995AD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-next:hover {
+    background-color: #135e74;
+}
 
 .radio-option {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px; 
 }
 
-.radio-option input[type="radio"] {
-  margin-right: 10px;
-  cursor: pointer;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid $primary-color;
-  border-radius: 50%;
+.radio-option:last-child {
+  margin-bottom: 0; 
 }
-
-.radio-option input[type="radio"]:checked {
-  background-color: #1995AD;
-}
-
-.radio-option input[type="radio"]:checked + label {
-  font-weight: bold;
-  color: black;
-}
-
-
-.radio-label {
-  font-size: 16px;
-}
-
-
 .button-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
- 
-  button {
-    padding: 10px 24px;
-    border: none;
-    border-radius: $border-radius;
-    font-family: inherit;
-    font-size: 16px; 
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    background-color:#F1F1F2;
-    border: 1px solid black;
-  }
-  
-  button:hover {
-
-    background-color: #1995AD;;
-  
-  }
-  
-  button:focus {
-    outline: 2px solid $primary-color;
-  }
-
-
-.que h3 { 
-  text-align: center;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.radio-label {
-  margin-left: 5px; 
+.button-container button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-container button:first-child {
+  background-color: #E6FFFD;
+  color: #1995AD;
+}
+
+.button-container button:last-child {
+  background-color: #1995AD;
+  color: #fff;
+}
+
+.button-container button:hover {
+  background-color: #F1F1F2;
+}
+
+.button-container button:focus {
+  outline: 2px solid #1995AD;
 }
 label{
-  margin-bottom: 10px;
+  font-size: 22px;
+}
+.date-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.date-input:focus {
+  border-color: #1995AD;
+}
+.que[name='name'] input[type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.que[name='name'] input[type='text']:focus {
+  border-color: #1995AD;
 }
