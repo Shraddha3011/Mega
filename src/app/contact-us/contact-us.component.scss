@@ -6,10 +6,11 @@
   body{
     min-height: 100vh;
     width: 100%;
+    opacity: 0.7;
     background-image: linear-gradient(
       to bottom,
-      #E6EDED 0%,
-      #E6EDED 50%,
+      #a1d6e2 0%,
+      #a1d6e2 50%,
       white 50%,
       white 100%
     );
@@ -68,7 +69,7 @@
   }
   .content .left-side .details i{
     font-size: 40px;
-    color: #29C4A9;
+    color: #1995ad;
     margin-bottom: 20px;
   }
   .content .left-side .details .topic{
@@ -88,7 +89,7 @@
   .content .right-side .topic-text{
     font-size: 23px;
     font-weight: 600;
-    color: #29C4A9;
+    color: #1995ad;
   }
   .right-side .input-box{
     height: 40px;
@@ -119,17 +120,17 @@
   }
   .right-side .button input[type="button"]{
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     outline: none;
     border: none;
-    padding: 8px 10px;
+    padding: 10px 16px;
     border-radius: 20px;
-    background: #29C4A9;
+    background: #1995ad;
     cursor: pointer;
     transition: all 0.3s ease;
   }
   .button input[type="button"]:hover{
-    background: #29C4A9;
+    background: #1995ad;
   }
   
   @media (max-width: 950px) {
