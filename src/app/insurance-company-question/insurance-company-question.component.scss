@@ -1,0 +1,147 @@
+h1{
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .que-container {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    border: 2px solid #1995AD;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+//   .que {
+//     border: 2px solid #1995AD;
+//     border-radius: 10px;
+//     padding: 40px;
+//     margin-bottom: 20px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   }
+
+  .question-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1995AD;
+  }
+
+  .form-group {
+      margin-bottom: 20px;
+  }
+
+  .text-input {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border-color 0.2s ease-in-out;
+      box-sizing: border-box;
+  }
+
+  .text-input:focus {
+      border-color: #1995AD;
+  }
+
+  .btn-next {
+      background-color: #1995AD;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .btn-next:hover {
+      background-color: #135e74;
+  }
+
+  .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+
+  .radio-option:last-child {
+    margin-bottom: 0; 
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .button-container button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .button-container button:first-child {
+    background-color: #E6FFFD;
+    color: #1995AD;
+  }
+
+  .button-container button:last-child {
+    background-color: #1995AD;
+    color: #fff;
+  }
+
+  .button-container button:hover {
+    background-color: #F1F1F2;
+  }
+
+  .button-container button:focus {
+    outline: 2px solid #1995AD;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .date-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  .date-input:focus {
+    border-color: #1995AD;
+  }
+
+  .que[name='name'] input[type='text'] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  .que[name='name'] input[type='text']:focus {
+    border-color: #1995AD;
+  }
