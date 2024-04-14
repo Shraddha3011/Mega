@@ -1,0 +1,97 @@
+{
+  "Plan Identification and Structure": [
+    { "term": "Plan ID", "input": "Text", "description": "Unique identification assigned to the health insurance plan by the Insurance Regulatory and Development Authority of India (IRDAI)." },
+    { "term": "Plan Name", "input": "Text", "description": "The marketing-oriented name used by the insurance provider to brand the health insurance plan." },
+    { "term": "Plan Type", "input": "Categorical", "description": "The classification of the plan, such as Basic, Premier, Comprehensive, etc., indicating the level of coverage and benefits." },
+    { "term": "Renewal Terms", "input": "Categorical", "description": "The frequency at which the policyholder must renew the health insurance plan." },
+    { "term": "Customer Satisfaction Rating", "input": "Numerical", "description": "A numerical rating, usually from 0 to 10, that reflects the perceived quality and satisfaction of the plan based on customer reviews." },
+    { "term": "Plan Ratings by Independent Agencies (e.g., IRDA)", "input": "Categorical", "description": "Evaluations or ratings of the plan's quality, performance, and standards by external organizations like the Insurance Regulatory and Development Authority of India (IRDAI)." },
+    { "term": "Plan Accreditation Status", "input": "Categorical", "description": "Whether the plan has been accredited by a recognized accrediting body, indicating it meets certain quality and regulatory standards." },
+    { "term": "Plan Complexity", "input": "Categorical", "description": "The level of difficulty in understanding and utilizing the various features and benefits of the health insurance plan." }
+  ],
+  "Costs and Coverage": [
+    { "term": "Deductible Amount", "input": "Numerical", "description": "The fixed amount that the policyholder must pay out-of-pocket before the insurance plan starts to cover the costs." },
+    { "term": "Co-payment for Doctor Visits", "input": "Numerical", "description": "The fixed amount the policyholder must pay for each doctor's visit." },
+    { "term": "Co-payment for Prescription Drugs", "input": "Numerical", "description": "The fixed amount the policyholder must pay for each prescription." },
+    { "term": "Out-of-Pocket Maximum", "input": "Numerical", "description": "The maximum amount the policyholder will have to pay out-of-pocket for covered services in a given year." },
+    { "term": "Monthly Premium", "input": "Numerical", "description": "The recurring cost the policyholder must pay to maintain the health insurance coverage." },
+    { "term": "Lifetime Maximum Coverage", "input": "Numerical", "description": "The maximum total amount the plan will pay out over the lifetime of the policyholder." },
+    { "term": "Coverage for Hospitalization (%)", "input": "Numerical", "description": "The percentage of hospitalization costs that the plan will cover." },
+    { "term": "Coverage for Prescription Drugs (%)", "input": "Numerical", "description": "The percentage of prescription drug costs that the plan will cover." },
+    { "term": "Coverage for Preventive Care (%)", "input": "Numerical", "description": "The percentage of preventive care services that the plan will cover." },
+    { "term": "Coverage for Mental Health Services (%)", "input": "Numerical", "description": "The percentage of mental health services that the plan will cover." },
+    { "term": "Coverage for Dental Care (%)", "input": "Numerical", "description": "The percentage of dental care costs that the plan will cover." },
+    { "term": "Coverage for Vision Care (%)", "input": "Numerical", "description": "The percentage of vision care costs that the plan will cover." },
+    { "term": "Coverage for Emergency Services (%)", "input": "Numerical", "description": "The percentage of emergency medical services that the plan will cover." },
+    { "term": "Coverage for Specialist Visits (%)", "input": "Numerical", "description": "The percentage of costs for visits to medical specialists that the plan will cover." },
+    { "term": "Coverage for Surgery (%)", "input": "Numerical", "description": "The percentage of surgical procedure costs that the plan will cover." },
+    { "term": "Coverage for Ambulance Services (%)", "input": "Numerical", "description": "The percentage of ambulance transportation costs that the plan will cover." },
+    { "term": "Coverage for Home Health Care (%)", "input": "Numerical", "description": "The percentage of home health care services that the plan will cover." },
+    { "term": "Coverage for Hospice Care (%)", "input": "Numerical", "description": "The percentage of hospice care costs that the plan will cover." },
+    { "term": "Coverage for Rehabilitation Services (%)", "input": "Numerical", "description": "The percentage of rehabilitation services that the plan will cover." },
+    { "term": "Coverage for Laboratory Services (%)", "input": "Numerical", "description": "The percentage of laboratory and diagnostic testing costs that the plan will cover." },
+    { "term": "Coverage for Diagnostic Imaging (%)", "input": "Numerical", "description": "The percentage of diagnostic imaging costs that the plan will cover." },
+    { "term": "Coverage for Nursing Home Care (%)", "input": "Numerical", "description": "The percentage of nursing home care costs that the plan will cover." },
+    { "term": "Coverage for Chiropractic Care (%)", "input": "Numerica", "description": "The percentage of chiropractic care costs that the plan will cover." },
+    { "term": "Coverage for Acupuncture (%)", "input": "Numerical", "description": "The percentage of acupuncture treatment costs that the plan will cover." },
+    { "term": "Coverage for Alternative Medicine (%)", "input": "Numerical", "description": "The percentage of alternative or complementary medicine costs that the plan will cover." },
+    { "term": "Coverage for Preventive Screenings (%)", "input": "Numerical", "description": "The percentage of preventive health screenings that the plan will cover." },
+    { "term": "Coverage for Out-of-Network Services (%)", "input": "Numerical", "description": "The percentage of costs for healthcare services received from providers outside the plan's network that the plan will cover." },
+    { "term": "Availability of Health Savings Account (Mediclaim Policy)", "input": "Categorical", "description": "Whether the plan allows the policyholder to open and contribute to a tax-advantaged Health Savings Account (known as a Mediclaim Policy in India)." },
+    { "term": "Availability of Flexible Spending Account", "input": "Categorical", "description": "Whether the plan allows the policyholder to contribute to a tax-advantaged Flexible Spending Account for healthcare expenses." },
+    { "term": "Availability of Health Reimbursement Arrangement", "input": "Categorical", "description": "Whether the plan offers a Health Reimbursement Arrangement, which is an employer-funded account for healthcare expenses." }
+  ],
+  "Network and Access": [
+    { "term": "Network Type (Cashless, Reimbursement)", "input": "Categorical", "description": "The type of provider network the plan utilizes." },
+    { "term": "Geographic Coverage Area", "input": "Categorical", "description": "The geographical area or regions where the plan is valid and accepted." },
+    { "term": "Provider Network Size", "input": "Numerical", "description": "The total number of healthcare providers that are part of the plan's network." },
+    { "term": "Provider Network Density", "input": "Numerical", "description": "The concentration or availability of network providers within a specific geographic area." },
+    { "term": "Plan Accessibility", "input": "Categorical", "description": "The digital platforms or channels through which policyholders can access information and manage their plans." },
+    { "term": "Availability of Telemedicine Services", "input": "Categorical", "description": "Whether the plan covers and provides access to remote healthcare services via video, phone, or other digital means." }
+  ],
+  "Specific Benefits": [
+    { "term": "Maternity Coverage", "input": "Categorical", "description": "Whether the plan provides coverage for pregnancy, childbirth, and related medical services." },
+    { "term": "Domiciliary Hospitalization", "input": "Categorical", "description": "Coverage for medical treatment received at home, when hospitalization is not required." }
+  ],
+  "Exclusions, Limitations, and Requirements": [
+    { "term": "Exclusions", "input": "Text", "description": "The specific healthcare services or treatments that the plan does not cover." },
+    { "term": "Pre-authorization Requirements", "input": "Categorical", "description": "Whether the plan requires prior approval or authorization from the insurer before certain services or treatments can be provided." },
+    { "term": "Waiting Period for Coverage", "input": "Numerical", "description": "The number of days a policyholder must wait before their coverage becomes effective." },
+    { "term": "Waiting Period for Pre-Existing Diseases", "input": "Numerical", "description": "The duration of the waiting period before coverage for pre-existing diseases becomes active." },
+    { "term": "Plan Enrollment Period", "input": "Categorical", "description": "The timeframe during which new policyholders can enroll in the plan." }
+  ],
+  "Customer Experience": [
+    { "term": "Customer Service Hours", "input": "Categorical", "description": "The available hours during which policyholders can access the plan's customer service support." },
+    { "term": "Customer Service Response Time", "input": "Numerical", "description": "The average time it takes for the plan's customer service to respond to inquiries or requests." },
+    { "term": "Ease of Claims Processing", "input": "Categorical", "description": "The level of difficulty or efficiency in filing and getting reimbursed for claims under the plan." },
+    { "term": "Claims Denial Rate", "input": "Numerical ", "description": "The percentage of claims submitted that are denied or rejected by the plan." },
+    { "term": "Claims Appeal Success Rate", "input": "Numerical", "description": "The percentage of denied claims that are successfully appealed and overturned." },
+    { "term": "Grievance Redressal Mechanism", "input": "Categorical", "description": "The process and timelines for policyholders to file and resolve complaints or grievances." }
+  ],
+  "Quality and Regulation": [
+    { "term": "Plan Ratings by Independent Agencies (e.g., IRDA)", "input": "Categorical", "description": "Evaluations or ratings of the plan's quality, performance, and standards by external organizations like the Insurance Regulatory and Development Authority of India (IRDAI)." },
+    { "term": "Plan Accreditation Status", "input": "Categorical", "description": "Whether the plan has been accredited by a recognized accrediting body, indicating it meets certain quality and regulatory standards." },
+    { "term": "Regulatory Compliance", "input": "Categorical", "description": "Adherence to the guidelines and regulations set by the Insurance Regulatory and Development Authority of India (IRDAI)." },
+    { "term": "Provider Credentialing Requirements", "input": "Categorical", "description": "The level of rigor and scrutiny applied by the plan in verifying the qualifications and credentials of its network providers." },
+    { "term": "Quality Improvement Initiatives", "input": "Categorical", "description": "Whether the plan has programs or efforts in place to continuously improve the quality of care and services it provides." }
+  ],
+  "Additional Benefits and Programs": [
+    { "term": "Health Education Resources", "input": "Categorical", "description": "The availability of educational materials and resources for policyholders to learn about health and wellness." },
+    { "term": "Preventive Health Programs", "input": "Categorical", "description": "The plan's offerings for promoting preventive care, wellness, and managing chronic health conditions." },
+    { "term": "Availability of Telehealth Services", "input": "Categorical", "description": "Whether the plan covers and provides access to remote healthcare services via video, phone, or other digital means." },
+    { "term": "Medication Management Programs", "input": "Categorical", "description": "Whether the plan offers programs to help policyholders manage their prescription medications." },
+    { "term": "Chronic Disease Management Programs", "input": "Categorical", "description": "Whether the plan has specialized programs to assist policyholders with managing chronic health conditions." },
+    { "term": "Mental Health Support Programs", "input": "Categorical", "description": "Whether the plan provides access to resources and programs for mental health and well-being." },
+    { "term": "Availability of Second Opinion Services", "input": "Categorical", "description": "Whether the plan allows policyholders to seek a second opinion from another healthcare provider." },
+    { "term": "Portability", "input": "Categorical", "description": "The ability to transfer the credit gained for pre-existing conditions and waiting periods when switching from one insurer to another." },
+    { "term": "Continuity of Coverage", "input": "Categorical", "description": "The ability to maintain coverage without any break when renewing the policy." },
+    { "term": "Restoration of Sum Insured", "input": "Categorical", "description": "Whether the plan offers the option to restore the sum insured amount after a claim has been made." },
+    { "term": "Cumulative Bonus", "input": "Numerical", "description": "The increase in the sum insured for every claim-free year, as per the IRDAI guidelines." },
+    { "term": "Cashless Facility", "input": "Categorical", "description": "The availability of a cashless treatment option at network hospitals, where the insurer directly settles the bill." },
+    { "term": "Rider/Add-on Coverages", "input": "Categorical", "description": "The availability of optional add-on coverages that can be purchased to enhance the base plan." },
+    { "term": "Medical Tourism Coverage", "input": "Categorical", "description": "Whether the plan provides coverage for healthcare services received while traveling or seeking treatment abroad." },
+    { "term": "Emergency Medical Evacuation Coverage", "input": "Categorical", "description": "Whether the plan includes coverage for emergency medical transportation or evacuation, such as during a medical emergency while traveling." },
+    { "term": "Global Coverage", "input": "Categorical", "description": "Whether the plan provides coverage for healthcare services received outside of the policyholder's home country or region." },
+    { "term": "Travel Assistance Services", "input": "Categorical", "description": "Whether the plan offers additional services or support for policyholders when traveling, such as help with arranging medical care, translating, or other travel-related needs." }
+  ]
+}

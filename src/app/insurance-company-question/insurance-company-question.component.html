@@ -1,0 +1,26 @@
+<h1>Health Insurance Questions</h1>
+
+  <div class="que-container">
+    <div *ngIf="currentCategoryIndex < categories.length">
+      <div *ngFor="let question of categories[currentCategoryIndex].questions" class="que">
+        <p class="question-title">{{ question.term }}</p>
+        <div class="form-group">
+          <ng-container *ngIf="question.input === 'Numerical'">
+            <input type="number" [(ngModel)]="question.answer" class="text-input" placeholder="Enter your answer">
+          </ng-container>
+          <ng-container *ngIf="question.input === 'Text' || question.input === 'Categorical'">
+            <input type="text" [(ngModel)]="question.answer" class="text-input" placeholder="Enter your answer">
+          </ng-container>
+        </div>
+      </div>
+      <div class="button-container">
+        <button *ngIf="currentCategoryIndex > 0" (click)="previousCategory()">Back</button>
+        <button (click)="nextCategory()" class="btn-next">Next</button>
+      </div>
+    </div>
+
+    <div *ngIf="currentCategoryIndex === categories.length">
+      <p>All questions answered!</p>
+      <button (click)="submitAnswers()" class="btn-submit">Submit Answers</button>
+    </div>
+  </div>

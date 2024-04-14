@@ -1,19 +1,21 @@
-<div *ngFor="let question of questions">
-  <p>{{ question.text }}</p>
-  <div>
-    <ng-container *ngFor="let option of question.options">
-      <label *ngIf="option.type !== 'radio'">
-        {{ option.label }}:
-        <input type="{{ option.type }}" [(ngModel)]="formData[question.text][option.label]">
-      </label>
-    </ng-container>
-    <div *ngIf="radioOptions[question.text] && radioOptions[question.text].length > 0">
-      <label *ngFor="let radioOption of radioOptions[question.text]">
-        <input type="radio" [(ngModel)]="formData[question.text][question.text]" [value]="radioOption">
-        {{ radioOption }}
-      </label>
+<div class="que-container">
+  <div *ngFor="let question of questions" class="que">
+    <p class="question-title">{{ question.text }}</p>
+    <div class="form-group" *ngFor="let option of question.options">
+      <label *ngIf="option.type !== 'radio'" class="label">{{ option.label }}:</label>
+      <input *ngIf="option.type !== 'radio'" class="text-input" type="{{ option.type }}" [(ngModel)]="formData[question.text][option.label]">
     </div>
+    <div *ngIf="radioOptions[question.text] && radioOptions[question.text].length > 0">
+      <div *ngFor="let radioOption of radioOptions[question.text]" class="radio-option">
+        <label>
+          <input type="radio" [(ngModel)]="formData[question.text][question.text]" [value]="radioOption" class="radio-input">
+          {{ radioOption }}
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="submit-container">
+    <button class="btn-submit" (click)="submitForm()">Submit</button>
   </div>
 </div>
 
-<button (click)="submitForm()">Submit</button>

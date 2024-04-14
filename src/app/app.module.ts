@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { QuestionComponent } from './components/question/question.component';
 import { LoginComponent } from './components/login/login.component';
 import {FirebaseUIModule, firebase, firebaseui} from 'firebaseui-angular';
 import {AngularFireModule} from '@angular/fire/compat';
@@ -15,8 +14,8 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { QuestionFormComponent } from './question-form/question-form.component';
-
 import { HttpClientModule } from '@angular/common/http';
+import { InsuranceCompanyQuestionComponent } from './insurance-company-question/insurance-company-question.component';
 
 
 @NgModule({
@@ -25,12 +24,12 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     HeaderComponent,
     SignUpComponent,
-    QuestionComponent,
     LoginComponent,
     VerifyEmailComponent,
     ContactUsComponent,
     AboutUsComponent,
     QuestionFormComponent,
+    InsuranceCompanyQuestionComponent,
   ],
   imports: [
     BrowserModule,FormsModule,
