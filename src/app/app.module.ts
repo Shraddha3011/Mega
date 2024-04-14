@@ -37,13 +37,13 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule ,
     AngularFireModule.initializeApp({
-        apiKey: "AIzaSyCw-gVP5oVBECwI6q-MQSvWMR6cnO2H78w",
-    authDomain: "insuramatch-cec0b.firebaseapp.com",
-    projectId: "insuramatch-cec0b",
-    storageBucket: "insuramatch-cec0b.appspot.com",
-    messagingSenderId: "432345424397",
-    appId: "1:432345424397:web:8bde09a27d4edc94ffeb44",
-    measurementId: "G-QDGG37PYET"
+      apiKey: "AIzaSyDWx5HQ7LBCSYawOWukYkILw5fL2a0pbgg",
+      authDomain: "insuramatch-187d4.firebaseapp.com",
+      projectId: "insuramatch-187d4",
+      storageBucket: "insuramatch-187d4.appspot.com",
+      messagingSenderId: "55792687225",
+      appId: "1:55792687225:web:586e8847c64e84596d1ca8",
+      measurementId: "G-D2LFEBY622"
     }),AngularFireAuthModule
   ],
   providers: [],
