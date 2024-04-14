@@ -1,0 +1,19 @@
+<div *ngFor="let question of questions">
+  <p>{{ question.text }}</p>
+  <div>
+    <ng-container *ngFor="let option of question.options">
+      <label *ngIf="option.type !== 'radio'">
+        {{ option.label }}:
+        <input type="{{ option.type }}" [(ngModel)]="formData[question.text][option.label]">
+      </label>
+    </ng-container>
+    <div *ngIf="radioOptions[question.text] && radioOptions[question.text].length > 0">
+      <label *ngFor="let radioOption of radioOptions[question.text]">
+        <input type="radio" [(ngModel)]="formData[question.text][question.text]" [value]="radioOption">
+        {{ radioOption }}
+      </label>
+    </div>
+  </div>
+</div>
+
+<button (click)="submitForm()">Submit</button>
