@@ -34,6 +34,6 @@ export class InsuranceCompanyQuestionComponent {
   }
 
   submitAnswers(): void {
-    console.log(this.categories); // You can handle the submitted answers here
+    console.log(this.categories); 
   }
 }
