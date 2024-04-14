@@ -24,7 +24,7 @@ body {
 }
 
 .question-title {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #1995AD;
 }
@@ -38,7 +38,7 @@ body {
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 14px;
     transition: border-color 0.2s ease-in-out;
     box-sizing: border-box;
 }
@@ -82,7 +82,7 @@ body {
   border: none;
   border-radius: 5px;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
@@ -105,14 +105,14 @@ body {
   outline: 2px solid #1995AD;
 }
 label{
-  font-size: 22px;
+  font-size: 18px;
 }
 .date-input {
   width: 100%;
   padding: 12px 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 14px;
   transition: border-color 0.2s ease-in-out;
   box-sizing: border-box;
 }
