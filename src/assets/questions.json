@@ -1,0 +1,49 @@
+{
+    "questions": [
+      {
+        "text": "What's your Name",
+        "options": [
+          { "label": "First Name", "type": "string" },
+          { "label": "Last Name", "type": "string" }
+        ]
+      },
+      {
+        "text": "What is your age",
+        "options": [
+          { "label": "Age", "type": "number" }
+        ]
+      },
+      {
+        "text": "What is your Gender",
+        "options": [
+          { "label": "Male", "type": "radio" },
+          { "label": "Female", "type": "radio" },
+          { "label": "Prefer not to say", "type": "radio" }
+        ]
+      },
+      {
+        "text": "Do you have any pre-existing medical conditions?",
+        "options": [
+          { "label": "No pre-existing conditions", "type": "radio" },
+          { "label": "Diabetes", "type": "radio" },
+          { "label": "Heart disease", "type": "radio" },
+          { "label": "Respiratory conditions (e.g., asthma, COPD)", "type": "radio" }
+        ]
+      },
+      {
+        "text": "Have you had any surgeries or medical procedures in the past year?",
+        "options": [
+          { "label": "Yes", "type": "radio" },
+          { "label": "No", "type": "radio" }
+        ]
+      },
+      {
+        "text": "Are you a smoker or non-smoker?",
+        "options": [
+          { "label": "Yes", "type": "radio" },
+          { "label": "No", "type": "radio" }
+        ]
+      }
+    ]
+  }
+  

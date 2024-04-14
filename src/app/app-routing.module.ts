@@ -8,6 +8,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { QuestionFormComponent } from './question-form/question-form.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'home',component:HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   {path:'about-us',component: AboutUsComponent},
   {path:'contact',component: ContactUsComponent},
+  {path:'question-form',component:QuestionFormComponent}
 
 ];
 
