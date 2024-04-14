@@ -14,8 +14,9 @@ import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { QuestionFormComponent } from './question-form/question-form.component';
 
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,10 +30,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
     VerifyEmailComponent,
     ContactUsComponent,
     AboutUsComponent,
+    QuestionFormComponent,
   ],
   imports: [
     BrowserModule,FormsModule,
     AppRoutingModule,
+    HttpClientModule ,
     AngularFireModule.initializeApp({
         apiKey: "AIzaSyCw-gVP5oVBECwI6q-MQSvWMR6cnO2H78w",
     authDomain: "insuramatch-cec0b.firebaseapp.com",
